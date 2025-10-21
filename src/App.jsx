@@ -5,6 +5,12 @@ import "./index.css";
 import Galaxy from "./components/Galaxy/Galaxy.jsx";
 import TextType from './components/TextType/TextType.jsx';
 import ResponsiveNavbar from "./components/ResponsiveNavbar/ResponsiveNavbar.jsx";
+import About from "./components/About/About.jsx";
+import Skills from "./components/Skills/Skills.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import Certificates from "./components/Certificates/Certificates.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+
 
 // update with your own items
 const items = [
@@ -135,213 +141,11 @@ function App() {
         </div>
       </section>
 
-
-      {/* ===== ABOUT ===== */}
-      <section id="about" className="section about-section">
-        <div className="container text-center">
-          <h2 className="section-title">ABOUT ME</h2>
-          <p className="section-desc">
-            Learn more about me – my background, personal insights, passions,
-            and the drive that keeps me from giving up.
-          </p>
-
-          <div className="cyber-box mx-auto mt-4">
-            <div className="cyber-box-inner">
-              <div className="row">
-                <div className="col-md-6 mb-4 mb-md-0">
-                  <div className="about-block">
-                    <div className="about-header">
-                      <i className="fas fa-user about-icon"></i>
-                      <h3>Personal Info</h3>
-                    </div>
-                    <ul className="about-list">
-                      <li>
-                        <i className="fas fa-id-card"></i>{" "}
-                        <span>Name:</span> Lý Anh Hiển
-                      </li>
-                      <li>
-                        <i className="fas fa-phone"></i>{" "}
-                        <span>Phone:</span> +84 937 591 227
-                      </li>
-                      <li>
-                        <i className="fab fa-telegram"></i>{" "}
-                        <span>Telegram:</span> @ahiendz
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="col-md-6">
-                  <div className="about-block">
-                    <div className="about-header">
-                      <i className="fas fa-briefcase about-icon"></i>
-                      <h3>Professional Info</h3>
-                    </div>
-                    <ul className="about-list">
-                      <li>
-                        <i className="fab fa-github"></i>{" "}
-                        <span>GitHub:</span> ahiendz
-                      </li>
-                      <li>
-                        <i className="fas fa-map-marker-alt"></i>{" "}
-                        <span>Location:</span> HCMC, Vietnam
-                      </li>
-                      <li>
-                        <i className="fas fa-language"></i>{" "}
-                        <span>Languages:</span> Vietnamese, English
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-center mt-4">
-                <a
-                  href="assets/docs/EBOOK 50 BÀI TOÁN TRỌNG TÂM CHƯƠNG 1 - TOÁN 9.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-cv"
-                >
-                  <i className="fas fa-download"></i> DOWNLOAD CV
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SKILLS ===== */}
-      <section id="skills" className="section bg-dark-alt">
-        <div className="container text-center">
-          <h2 className="section-title">Tech Stack</h2>
-          <div className="row g-4 justify-content-center">
-            {[
-              { name: "HTML", src: "src/assets/logo/html.svg" },
-              { name: "CSS", src: "src/assets/logo/css.svg" },
-              { name: "JavaScript", src: "src/assets/logo/javascript.svg" },
-              { name: "Python", src: "src/assets/logo/Python.svg" },
-            ].map((skill) => (
-              <div className="col-6 col-md-3" key={skill.name}>
-                <div className="card skill-card">
-                  <img src={skill.src} alt={skill.name} />
-                  <p>{skill.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== PROJECTS ===== */}
-      <section id="projects" className="section">
-        <div className="container text-center">
-          <h2 className="section-title">Projects</h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card project-card">
-                <img
-                  src="src\assets\img\to_do_list.png"
-                  className="card-img-top"
-                  alt="To-Do App"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">To-Do List App</h5>
-                  <p className="card-text">
-                    Ứng dụng quản lý công việc với Pomodoro Timer.
-                  </p>
-                  <a
-                    href="https://github.com/ahiendz/To-do-list"
-                    className="btn btn-outline-light btn-sm"
-                  >
-                    Details
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="card project-card">
-                <img
-                  src="src/assets/img/school.png"
-                  className="card-img-top"
-                  alt="School Manager"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">School Management System</h5>
-                  <p className="card-text">
-                    Quản lý lớp, giáo viên, học sinh và điểm số.
-                  </p>
-                  <a
-                    href="https://github.com/ahiendz/School-Management-System"
-                    className="btn btn-outline-light btn-sm"
-                  >
-                    Details
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== CERTIFICATES ===== */}
-      <section id="certificates" className="section bg-dark-alt">
-        <div className="container text-center">
-          <h2 className="section-title">Certificates</h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card cert-card">
-                <i className="fas fa-trophy"></i>
-                <h5>Giải Nhất VioEdu Toán</h5>
-                <p>Thành tích nổi bật trong học tập.</p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="card cert-card">
-                <i className="fas fa-laptop-code"></i>
-                <h5>Đại diện thi HSG máy tính cầm tay</h5>
-                <p>Được chọn làm gương mặt đại diện của trường.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== CONTACT ===== */}
-      <section id="contact" className="section">
-        <div className="container text-center">
-          <h2 className="section-title">Contact Me</h2>
-          <div className="row justify-content-center mt-4">
-            <div className="col-md-8">
-              <div className="contact-box">
-                <form>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Tên của bạn"
-                    required
-                  />
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                  <textarea
-                    className="form-control"
-                    placeholder="Nội dung..."
-                    required
-                  ></textarea>
-                  <button className="btn-cyber mt-3 w-100">
-                    Gửi tin nhắn
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
+      <Skills />
+      <Projects />
+      <Certificates />
+      <Contact />
 
       {/* ===== FOOTER ===== */}
       <footer>

@@ -1,0 +1,74 @@
+.about-section {
+  padding: 100px 0;
+  background: #0d1117;
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: rgba(20, 25, 35, 0.85);
+  border: 1px solid #00bfff60;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
+  padding: 2rem;
+  width: 320px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+  border-color: #00bfff;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00bfff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-card li {
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.about-card b {
+  color: #fff;
+}
+
+.btn-cv {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(255, 0, 204, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 204, 0.6);
+  transform: scale(1.05);
+}
