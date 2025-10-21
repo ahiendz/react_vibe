@@ -105,6 +105,7 @@ function App() {
                 <span className="badge">JavaScript</span>
                 <span className="badge">HTML</span>
                 <span className="badge">Bootstrap</span>
+                <span className="badge">React</span>
               </div>
 
               <div className="d-flex gap-3">
@@ -112,7 +113,7 @@ function App() {
                   Liên hệ
                 </a>
                 <a href="#about" className="btn-outline">
-                  Xem CV
+                  Xem Hồ Sơ Học Tập
                 </a>
               </div>
 

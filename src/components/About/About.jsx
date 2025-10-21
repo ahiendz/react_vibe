@@ -35,14 +35,14 @@ const About = () => {
           </div>
         </AnimatedContent>
       </div>
-
+      
       <a
-        href="/assets/docs/LyAnhHien_CV.pdf"
+        href="/docs\HỒ SƠ HỌC TẬP.pdf"
         className="btn-cv mt-4"
         target="_blank"
         rel="noreferrer"
       >
-        <i className="fas fa-download"></i> DOWNLOAD CV
+        <i className="fas fa-download"></i> Xem hồ sơ học tập
       </a>
     </section>
   );

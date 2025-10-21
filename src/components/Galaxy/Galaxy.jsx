@@ -283,6 +283,17 @@ export default function Galaxy({
     animateId = requestAnimationFrame(update);
     ctn.appendChild(gl.canvas);
 
+    // Đảm bảo canvas không chặn sự kiện chuột và luôn ở background
+    Object.assign(gl.canvas.style, {
+      pointerEvents: "none",
+      position: "absolute",
+      top: "0",
+      left: "0",
+      width: "100%",
+      height: "100%",
+      zIndex: "0",
+    });
+
     function handleMouseMove(e) {
       const rect = ctn.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
@@ -329,5 +340,13 @@ export default function Galaxy({
     transparent
   ]);
 
-  return <div ref={ctnDom} className="galaxy-container" {...rest} />;
+  return (
+    <div
+      ref={ctnDom}
+      className="galaxy-container"
+      style={{ pointerEvents: "none" }}
+      {...rest}
+    />
+  );
+
 }
