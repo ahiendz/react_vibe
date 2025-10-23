@@ -4,10 +4,10 @@ import ScrollFloat from "../ScrollFloat/ScrollFloat";
 import "./Skills.css";
 
 const skills = [
-  { name: "HTML", src: "/assets/logo/html.svg" },
-  { name: "CSS", src: "/assets/logo/css.svg" },
-  { name: "JavaScript", src: "/assets/logo/javascript.svg" },
-  { name: "Python", src: "/assets/logo/Python.svg" },
+  { name: "HTML", src: "src/assets/logo/html.svg" },
+  { name: "CSS", src: "src/assets/logo/css.svg" },
+  { name: "JavaScript", src: "src/assets/logo/javascript.svg" },
+  { name: "Python", src: "src/assets/logo/Python.svg" },
 ];
 
 const Skills = () => {

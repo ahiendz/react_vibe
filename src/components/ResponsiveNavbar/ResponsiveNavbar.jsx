@@ -35,7 +35,7 @@ export default function ResponsiveNavbar() {
         {/* === Logo === */}
         <a className="navbar-brand d-flex align-items-center" href="#home">
           <img
-            src="\assets\img\logo.jpg"
+            src="src\assets\img\logo.jpg"
             className="logo-hover me-2"
             width="55"
             alt="Logo"

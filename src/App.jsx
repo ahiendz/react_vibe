@@ -133,7 +133,7 @@ function App() {
             {/* Ảnh bên phải */}
             <div className="col-lg-6 text-center">
               <img
-                src="/assets/img/avata.jpg"
+                src="src\assets\img\avata.jpg"
                 alt="Anh Hiển"
                 className="hero-img"
               />

@@ -7,19 +7,19 @@ const Projects = () => {
   const projectData = [
     {
       name: "To-Do List App",
-      img: "\assets\img\to_do_list.png",
+      img: "src/assets/img/to_do_list.png",
       desc: "Ứng dụng quản lý công việc với Pomodoro Timer.",
       link: "https://github.com/ahiendz/To-do-list",
     },
     {
       name: "School Management System",
-      img: "\assets\img\school.png",
+      img: "src/assets/img/school.png",
       desc: "Quản lý lớp, giáo viên, học sinh và điểm số.",
       link: "https://github.com/ahiendz/School-Management-System",
     },
     {
       name: "Hand-Gesture-Control",
-      img: "/assets/img/hand.png",
+      img: "src/assets/img/hand.png",
       desc: "Điều khiển ánh sáng bằng sức mạnh của bàn tay.",
       link: "https://github.com/ahiendz/Hand-Gesture-Control",
     }
