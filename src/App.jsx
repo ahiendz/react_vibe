@@ -109,7 +109,7 @@ function App() {
               </div>
 
               <div className="d-flex gap-3">
-                <a href="#contact" className="btn-cyber">
+                <a href="#contact" className="btn-contact">
                   Liên hệ
                 </a>
                 <a href="#about" className="btn-outline">
