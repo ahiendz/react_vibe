@@ -37,7 +37,7 @@ const About = () => {
       </div>
       
       <a
-        href="/docs\HỒ SƠ HỌC TẬP.pdf"
+        href="src\assets\docs\HỒ SƠ HỌC TẬP.pdf"
         className="btn-cv mt-4"
         target="_blank"
         rel="noreferrer"

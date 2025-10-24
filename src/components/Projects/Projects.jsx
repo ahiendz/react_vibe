@@ -32,10 +32,10 @@ const Projects = () => {
         {projectData.map((proj, i) => (
           <AnimatedContent key={i} delay={i * 0.3}>
             <div className="project-card">
-              <img src={proj.img} alt={proj.name} />
+              <img src={proj.img} alt={proj.name}/>
               <h5>{proj.name}</h5>
               <p>{proj.desc}</p>
-              <a href={proj.link} className="btn-outline">Details</a>
+              <a href={proj.link} className="btn-outline" target="_blank" rel="noreferrer">Details</a>
             </div>
           </AnimatedContent>
         ))}

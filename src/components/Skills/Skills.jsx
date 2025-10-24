@@ -8,6 +8,8 @@ const skills = [
   { name: "CSS", src: "src/assets/logo/css.svg" },
   { name: "JavaScript", src: "src/assets/logo/javascript.svg" },
   { name: "Python", src: "src/assets/logo/Python.svg" },
+  { name: "React", src: "src/assets/logo/react.svg" },
+  { name: "Bootstrap", src: "src/assets/logo/bootstrap.svg" },
 ];
 
 const Skills = () => {

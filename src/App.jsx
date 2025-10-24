@@ -83,10 +83,7 @@ function App() {
                 <span>Lý Anh Hiển</span>
               </h1>
               <p className="subtitle">Junior Developer | STEM Enthusiast</p>
-              {/* <p className="typewriter">
-                <span id="motto"></span>
-                <span className="cursor">|</span>
-              </p> */}
+
               <TextType
                 text={[`"Don't just code. Own it."`,
                   `"Build smart. Learn fast."`,
@@ -104,6 +101,7 @@ function App() {
                 <span className="badge">Python</span>
                 <span className="badge">JavaScript</span>
                 <span className="badge">HTML</span>
+                <span className="badge">CSS</span>
                 <span className="badge">Bootstrap</span>
                 <span className="badge">React</span>
               </div>
