@@ -1,8 +1,9 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 
-// 👇 THÊM base: '/<repo-name>/' VÀO ĐÂY
+// Cấu hình base '/' để deploy trên Vercel (Root Domain)
 export default defineConfig({
   plugins: [react()],
-  base: '/react_vibe/', // ⚠️ THAY 'react_vibe' = TÊN REPO TRÊN GITHUB CỦA M
+  base: '/',
 })
+
